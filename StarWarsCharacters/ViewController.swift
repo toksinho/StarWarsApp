@@ -10,9 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var network = WebService()
+    var charactersArray = [Character]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let urlLink = "http://swapi.co/api/people"
+        
+        network.fetchCharacterData(urlLink: urlLink)  {
+            (dataResult) -> Void in
+            switch dataResult {
+            case let .success(characters):
+                self.charactersArray = characters
+            case let .failure(error):
+                print("Error fetching characters: \(error)")
+            }
+        }
+
     }
 
     override func didReceiveMemoryWarning() {

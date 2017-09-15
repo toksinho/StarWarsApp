@@ -12,6 +12,10 @@
 		DE2F44101F69A84600559113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2F440E1F69A84600559113 /* Main.storyboard */; };
 		DE2F44121F69A84600559113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2F44111F69A84600559113 /* Assets.xcassets */; };
 		DE2F44151F69A84600559113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2F44131F69A84600559113 /* LaunchScreen.storyboard */; };
+		DE2F441D1F69ACC900559113 /* WebData.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE2F441C1F69ACC900559113 /* WebData.plist */; };
+		DE34FF541F6C46BB000B2AE2 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34FF531F6C46BB000B2AE2 /* Character.swift */; };
+		DE34FF561F6C48BF000B2AE2 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34FF551F6C48BF000B2AE2 /* WebService.swift */; };
+		DE34FF581F6C4C75000B2AE2 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34FF571F6C4C75000B2AE2 /* JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		DE2F44111F69A84600559113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE2F44141F69A84600559113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE2F44161F69A84600559113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE2F441C1F69ACC900559113 /* WebData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WebData.plist; sourceTree = "<group>"; };
+		DE34FF531F6C46BB000B2AE2 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		DE34FF551F6C48BF000B2AE2 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		DE34FF571F6C4C75000B2AE2 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				DE2F44111F69A84600559113 /* Assets.xcassets */,
 				DE2F44131F69A84600559113 /* LaunchScreen.storyboard */,
 				DE2F44161F69A84600559113 /* Info.plist */,
+				DE2F441C1F69ACC900559113 /* WebData.plist */,
+				DE34FF531F6C46BB000B2AE2 /* Character.swift */,
+				DE34FF551F6C48BF000B2AE2 /* WebService.swift */,
+				DE34FF571F6C4C75000B2AE2 /* JSON.swift */,
 			);
 			path = StarWarsCharacters;
 			sourceTree = "<group>";
@@ -96,8 +108,7 @@
 				TargetAttributes = {
 					DE2F44061F69A84600559113 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = SFNY78ZLT2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -127,6 +138,7 @@
 				DE2F44151F69A84600559113 /* LaunchScreen.storyboard in Resources */,
 				DE2F44121F69A84600559113 /* Assets.xcassets in Resources */,
 				DE2F44101F69A84600559113 /* Main.storyboard in Resources */,
+				DE2F441D1F69ACC900559113 /* WebData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE34FF541F6C46BB000B2AE2 /* Character.swift in Sources */,
+				DE34FF581F6C4C75000B2AE2 /* JSON.swift in Sources */,
 				DE2F440D1F69A84600559113 /* ViewController.swift in Sources */,
+				DE34FF561F6C48BF000B2AE2 /* WebService.swift in Sources */,
 				DE2F440B1F69A84600559113 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,11 +278,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SFNY78ZLT2;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StarWarsCharacters/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tokic.StarWarsCharacters;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.StarWarsCharacters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,11 +292,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SFNY78ZLT2;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StarWarsCharacters/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tokic.StarWarsCharacters;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.StarWarsCharacters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +321,7 @@
 				DE2F441B1F69A84600559113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

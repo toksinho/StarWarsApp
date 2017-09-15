@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>http://starwars.wikia.com/wiki/Luke_Skywalker/Legends</string>
+	<string>http://starwars.wikia.com/wiki/C-3PO/Legends</string>
+	<string>http://starwars.wikia.com/wiki/R2-D2/Legends</string>
+	<string>http://disney.wikia.com/wiki/Darth_Vader</string>
+	<string>http://disney.wikia.com/wiki/Leia_Organa</string>
+	<string>http://disney.wikia.com/wiki/Owen_Lars</string>
+	<string>http://disney.wikia.com/wiki/Beru_Whitesun_Lars</string>
+	<string>http://starwars.wikia.com/wiki/R5-D4/Legends</string>
+	<string>http://starwars.wikia.com/wiki/Biggs_Darklighter/Legends</string>
+	<string>http://disney.wikia.com/wiki/Obi-Wan_Kenobi</string>
+	<string>http://starwars.wikia.com/wiki/Anakin_Skywalker/Legends</string>
+	<string>http://disney.wikia.com/wiki/Wilhuff_Tarkin</string>
+	<string>http://disney.wikia.com/wiki/Chewbacca</string>
+	<string>http://disney.wikia.com/wiki/Han_Solo</string>
+	<string>http://disney.wikia.com/wiki/Greedo</string>
+	<string>http://disney.wikia.com/wiki/Jabba_the_Hutt</string>
+	<string>http://disney.wikia.com/wiki/Wedge_Antilles</string>
+	<string>http://starwars.wikia.com/wiki/Jek_Tono_Porkins/Legends</string>
+	<string>http://disney.wikia.com/wiki/Yoda</string>
+	<string>http://disney.wikia.com/wiki/Palpatine</string>
+	<string>http://disney.wikia.com/wiki/Boba_Fett</string>
+	<string>http://starwars.wikia.com/wiki/IG-88</string>
+	<string>http://disney.wikia.com/wiki/Bossk</string>
+	<string>http://disney.wikia.com/wiki/Lando_Calrissian</string>
+	<string>http://starwars.wikia.com/wiki/Lobot/Legends</string>
+	<string>http://disney.wikia.com/wiki/Gial_Ackbar</string>
+	<string>http://disney.wikia.com/wiki/Mon_Mothma</string>
+	<string>http://starwars.wikia.com/wiki/Arvel_Crynyd/Legends</string>
+	<string>http://disney.wikia.com/wiki/Wicket_W._Warrick</string>
+	<string>http://disney.wikia.com/wiki/Nien_Nunb</string>
+</array>
+</plist>
