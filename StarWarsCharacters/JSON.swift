@@ -34,8 +34,6 @@ struct JSON {
             if arrayOfCharacters.isEmpty && !results.isEmpty {
                 return .failure(DataError.invalidJSONData)
             }
-            
-            printCharacters(arrayOfCharacters)
             return .success(arrayOfCharacters)
         } catch let error {
             return .failure(error)
@@ -57,13 +55,9 @@ struct JSON {
         return Character(name: name, height: height, mass: mass, hair_color: hair_color)
     }
     
-    private static func printCharacters(_ array: [Character]) {
-        for person in array {
-            print("Name: \(person.name) Height: \(person.height) Mass: \(person.mass) Hair Color: \(person.hair_color)")
-        }
     
     
     }
     
     
-}
+

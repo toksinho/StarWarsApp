@@ -10,12 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var network = WebService()
-    var charactersArray = [Character]()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    @IBAction func ShowData(_ sender: Any) {
         let urlLink = "http://swapi.co/api/people"
         
         network.fetchCharacterData(urlLink: urlLink)  {
@@ -27,6 +22,14 @@ class ViewController: UIViewController {
                 print("Error fetching characters: \(error)")
             }
         }
+
+    }
+    var network = WebService()
+    var charactersArray = [Character]()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
 
     }
 
