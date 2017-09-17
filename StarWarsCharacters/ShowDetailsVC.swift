@@ -15,10 +15,8 @@ class ShowDetailsVC: UIViewController {
     @IBOutlet weak var massValue: UITextField!
     @IBOutlet weak var hairColorValue: UITextField!
     
-    var name: String!
-    var height: String!
-    var hairColor: String!
-    var mass: String!
+
+    var character: Character!
     
     @IBAction func showWebView(_ sender: Any) {
     }
@@ -26,16 +24,16 @@ class ShowDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nameLabel.text = name
+        nameLabel.text = character.name
         
         heightValue.isUserInteractionEnabled = false
-        heightValue.text = height
+        heightValue.text = character.height
         
         massValue.isUserInteractionEnabled = false
-        massValue.text = mass
+        massValue.text = character.mass
         
         hairColorValue.isUserInteractionEnabled = false
-        hairColorValue.text = hairColor
+        hairColorValue.text = character.hair_color
         
     }
 

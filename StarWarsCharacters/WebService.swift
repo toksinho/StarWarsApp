@@ -21,17 +21,21 @@ class WebService {
     }()
     
     private func processRequest(data: Data?, error: Error?) -> DataResult {
+        
         guard let jsonData = data else {
             return .failure(error!)
         }
+        
         return JSON.characters(fromJSON: jsonData)
     }
     
     func fetchCharacterData(urlLink: String, completion: @escaping (DataResult) -> Void) {
+        
         guard let url = URL(string: urlLink) else {
             print("Error: cannot create URL")
             return
         }
+        
         let request = URLRequest(url: url)
         let task = session.dataTask(with: request) {
             (data, response, error) -> Void in

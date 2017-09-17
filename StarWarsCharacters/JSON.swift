@@ -14,6 +14,8 @@ enum DataError: Error {
 
 struct JSON {
     
+    static var webUrlForNextCharacters: String?
+    
     static func characters(fromJSON data: Data) -> DataResult {
         
         do {
@@ -22,8 +24,17 @@ struct JSON {
             guard
                 let jsonDictionary = jsonObject as? [String: Any],
                 let results = jsonDictionary["results"] as? [[String: Any]]
+            
+                
                 else {
                     return .failure(DataError.invalidJSONData)
+            }
+            
+            //need this because some data is null
+            if let next = jsonDictionary["next"] as? String {
+                nextCharacters(fromJSON: next)
+            } else {
+                nextCharacters(fromJSON: nil)
             }
             var arrayOfCharacters = [Character]()
             for dataJSON in results {
@@ -34,11 +45,15 @@ struct JSON {
             if arrayOfCharacters.isEmpty && !results.isEmpty {
                 return .failure(DataError.invalidJSONData)
             }
+            
+            
+            
             return .success(arrayOfCharacters)
         } catch let error {
             return .failure(error)
         }
     }
+    
     
     private static func character(fromJSON json: [String : Any]) -> Character? {
         
@@ -56,8 +71,16 @@ struct JSON {
     }
     
     
+    private static func nextCharacters(fromJSON nextUrl: String?) {
+        
+        if let url = nextUrl {
+            webUrlForNextCharacters = url
+        } else {
+            webUrlForNextCharacters = nil
+        }
     
     }
-    
+
+}
     
 

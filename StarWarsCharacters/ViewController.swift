@@ -10,33 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func ShowData(_ sender: Any) {
-        let urlLink = "http://swapi.co/api/people"
-        
-        network.fetchCharacterData(urlLink: urlLink)  {
-            (dataResult) -> Void in
-            switch dataResult {
-            case let .success(characters):
-                self.charactersArray = characters
-            case let .failure(error):
-                print("Error fetching characters: \(error)")
-            }
-        }
-
-    }
     var network = WebService()
     var charactersArray = [Character]()
+    
+    @IBAction func ShowData(_ sender: Any) {
+
+        performSegue(withIdentifier: "showTable", sender: sender)
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 
 }
