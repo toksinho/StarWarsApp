@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     var network = WebService()
     var charactersArray = [Character]()
     
+    @IBOutlet weak var showTableButton: UIButton!
+    
     @IBAction func ShowData(_ sender: Any) {
 
         performSegue(withIdentifier: "showTable", sender: sender)
@@ -22,6 +24,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        showTableButton.layer.cornerRadius = 10
+        showTableButton.clipsToBounds = true
     }
 
 

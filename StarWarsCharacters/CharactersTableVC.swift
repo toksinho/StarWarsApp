@@ -109,6 +109,7 @@ class CharactersTableVC: UITableViewController {
                 let character = charactersArray[indexPath.row]
                 if let showDetailsVC = segue.destination as? ShowDetailsVC {
                     showDetailsVC.character = character
+                    showDetailsVC.indexOfArray = indexPath.row
                 }
             }
         }

@@ -56,6 +56,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="wcy-Xb-1Ln"/>
                     <connections>
+                        <outlet property="showTableButton" destination="77o-s2-L51" id="5YT-zn-8Uz"/>
                         <segue destination="v1H-Nd-zAS" kind="show" identifier="showTable" id="20z-Ia-V5f"/>
                     </connections>
                 </viewController>
@@ -227,12 +228,47 @@
                         <outlet property="hairColorValue" destination="6fB-id-jPA" id="rBf-28-zZo"/>
                         <outlet property="heightValue" destination="Tky-tJ-QYF" id="scD-ps-iSJ"/>
                         <outlet property="massValue" destination="lH2-Hv-bB2" id="fWw-gl-3en"/>
+                        <outlet property="moreDataButton" destination="8b1-jO-LLz" id="bRv-AA-DiT"/>
                         <outlet property="nameLabel" destination="f6w-0c-BZU" id="jyM-Fm-auZ"/>
+                        <segue destination="5Qw-xX-g2E" kind="show" identifier="showWebView" id="K70-WG-HCl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qw5-CJ-Fyv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2840.579710144928" y="122.28260869565219"/>
+        </scene>
+        <!--Web ViewVC-->
+        <scene sceneID="dpx-3A-cYp">
+            <objects>
+                <viewController id="5Qw-xX-g2E" customClass="WebViewVC" customModule="StarWarsCharacters" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yc5-XW-iui"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vd5-hY-euF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iSA-2Y-BEf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qqq-Jd-Ja8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qqq-Jd-Ja8" firstAttribute="leading" secondItem="iSA-2Y-BEf" secondAttribute="leading" id="9oD-Y6-KAd"/>
+                            <constraint firstAttribute="trailing" secondItem="qqq-Jd-Ja8" secondAttribute="trailing" id="Hdc-Nf-if0"/>
+                            <constraint firstItem="Vd5-hY-euF" firstAttribute="top" secondItem="qqq-Jd-Ja8" secondAttribute="bottom" id="czt-Wh-5Qc"/>
+                            <constraint firstItem="qqq-Jd-Ja8" firstAttribute="top" secondItem="iSA-2Y-BEf" secondAttribute="top" id="iZR-Ma-CUe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="qqq-Jd-Ja8" id="g1m-cs-bTS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDa-6z-FFw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3556.521739130435" y="122.28260869565219"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qvY-IY-j95">

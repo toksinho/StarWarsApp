@@ -19,6 +19,8 @@
 		DE34FF541F6C46BB000B2AE2 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34FF531F6C46BB000B2AE2 /* Character.swift */; };
 		DE34FF561F6C48BF000B2AE2 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34FF551F6C48BF000B2AE2 /* WebService.swift */; };
 		DE34FF581F6C4C75000B2AE2 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34FF571F6C4C75000B2AE2 /* JSON.swift */; };
+		DECBEC841F6EFEE600ACF414 /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECBEC831F6EFEE600ACF414 /* WebViewVC.swift */; };
+		DECBEC871F6F010200ACF414 /* PListHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECBEC861F6F010200ACF414 /* PListHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		DE34FF531F6C46BB000B2AE2 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		DE34FF551F6C48BF000B2AE2 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		DE34FF571F6C4C75000B2AE2 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		DECBEC831F6EFEE600ACF414 /* WebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
+		DECBEC861F6F010200ACF414 /* PListHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		DE2F44091F69A84600559113 /* StarWarsCharacters */ = {
 			isa = PBXGroup;
 			children = (
+				DECBEC851F6F00BB00ACF414 /* Helpers */,
 				DECBEC821F6EF88A00ACF414 /* Networking */,
 				DECBEC811F6EF88300ACF414 /* Controller */,
 				DECBEC801F6EF87B00ACF414 /* View */,
@@ -104,6 +109,7 @@
 				DE2AB4771F6D4CA100BA07A9 /* CharactersTableVC.swift */,
 				DE2AB47B1F6D73EA00BA07A9 /* ShowDetailsVC.swift */,
 				DE2F440C1F69A84600559113 /* ViewController.swift */,
+				DECBEC831F6EFEE600ACF414 /* WebViewVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -115,6 +121,14 @@
 				DE34FF571F6C4C75000B2AE2 /* JSON.swift */,
 			);
 			name = Networking;
+			sourceTree = "<group>";
+		};
+		DECBEC851F6F00BB00ACF414 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DECBEC861F6F010200ACF414 /* PListHelper.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,11 +206,13 @@
 			files = (
 				DE34FF541F6C46BB000B2AE2 /* Character.swift in Sources */,
 				DE34FF581F6C4C75000B2AE2 /* JSON.swift in Sources */,
+				DECBEC841F6EFEE600ACF414 /* WebViewVC.swift in Sources */,
 				DE2F440D1F69A84600559113 /* ViewController.swift in Sources */,
 				DE2AB47A1F6D501500BA07A9 /* CharacterCell.swift in Sources */,
 				DE34FF561F6C48BF000B2AE2 /* WebService.swift in Sources */,
 				DE2F440B1F69A84600559113 /* AppDelegate.swift in Sources */,
 				DE2AB47C1F6D73EA00BA07A9 /* ShowDetailsVC.swift in Sources */,
+				DECBEC871F6F010200ACF414 /* PListHelper.swift in Sources */,
 				DE2AB4781F6D4CA100BA07A9 /* CharactersTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
